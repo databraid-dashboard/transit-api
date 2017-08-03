@@ -37,3 +37,12 @@ suite('directions route', () => {
       .expect(200, done);
   });
 });
+
+suite('alerts route', () => {
+
+  test('GET /alerts should return 200 OK', (done) => {
+    request(server)
+      .get('/alerts')
+      .expect(200, done);
+  });
+});
