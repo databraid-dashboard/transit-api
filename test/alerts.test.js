@@ -20,7 +20,7 @@ suite('alerts route', () => {
     { subject: 'Pittsburg (Bliss) Park & Ride to Close for Construction Starting Monday, May 15. No Bus Service Available.',
       description: 'BART will be closing the Pittsburg Park & Ride starting Monday, May 15 for construction of the Pittsburg BART station. Duration of the closure is unknown. \r\n\r\nDuring the closure, Tri Delta Transit buses WILL NOT stop at this location. Buses cannot stop on Bliss Avenue. \r\n\r\nFor details including alternate bus stops near the Park & Ride,visit http://trideltatransit.com/bliss/\r\n' }
     }
-});
+  });
 
 test('GET /alerts should return 200 OK', () => {
   alerts.getAlerts()
@@ -34,5 +34,5 @@ test('GET /alerts should return 200 OK', () => {
     { subject: 'Pittsburg (Bliss) Park & Ride to Close for Construction Starting Monday, May 15. No Bus Service Available.',
       description: 'BART will be closing the Pittsburg Park & Ride starting Monday, May 15 for construction of the Pittsburg BART station. Duration of the closure is unknown. \r\n\r\nDuring the closure, Tri Delta Transit buses WILL NOT stop at this location. Buses cannot stop on Bliss Avenue. \r\n\r\nFor details including alternate bus stops near the Park & Ride,visit http://trideltatransit.com/bliss/\r\n' }
     });
+  });
 });
-})
