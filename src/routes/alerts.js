@@ -7,7 +7,6 @@ router.get('/alerts', (req, res) => {
 
     alerts.getAlerts()
     .then(alerts => {
-      console.log(alerts);
       res.json(alerts)
     })
     .catch(err => {
