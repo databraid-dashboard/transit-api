@@ -12,7 +12,6 @@ const alerts = require('./src/routes/alerts');
 app.use(directions);
 app.use(alerts);
 
-
 app.get('/', (req, res) => {
   res.send('aok');
 });
