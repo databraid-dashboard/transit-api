@@ -14,8 +14,6 @@ const validTransitModes = ['bus', 'subway', 'train', 'tram', 'rail'];
 
 router.get('/directions', (req, res) => {
   const request = req.query;
-  console.log('----- new request -----');
-  console.log(request);
 
   // remove invalid and empty query parameters
   Object.keys(request).forEach((parameter) => {
