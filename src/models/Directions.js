@@ -7,9 +7,11 @@ const googleMapsClient = require('@google/maps').createClient({
 
 class Directions {
   getDirections(apiQuery) {
+    this.apiQuery = apiQuery;
+
     const currentUtcTimeInSeconds = Math.round(Date.now() / 1000);
 
-    return googleMapsClient.directions(apiQuery).asPromise()
+    return googleMapsClient.directions(this.apiQuery).asPromise()
       .then((response) => {
         if (response.json.status !== 'OK') {
           return response.json;
