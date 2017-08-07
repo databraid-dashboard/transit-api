@@ -15,11 +15,9 @@ class Directions {
       .then((response) => {
         if (response.json.status !== 'OK') {
           return response.json;
-          // return res.sendStatus(404);
         }
 
-        // sometimes Google Directions returns routes without
-        // arrival_time and departure_time so we exclude them
+        // for now only return routes with arrival_time and departure_time
         response.json.routes = response.json.routes.filter(route =>
           route.legs[0].arrival_time && route.legs[0].departure_time);
 
