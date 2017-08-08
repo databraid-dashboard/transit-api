@@ -8,7 +8,8 @@
     "dev": "scripts/dev",
     "up": "scripts/up",
     "down": "scripts/down",
-    "lint": "scripts/lint"
+    "lint": "scripts/lint",
+    "start": "node index.js"
   },
   "author": "",
   "license": "MIT",
