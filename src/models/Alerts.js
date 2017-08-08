@@ -17,6 +17,7 @@ function findLines(desc) {
 }
 
 class Alerts {
+  /* eslint-disable class-methods-use-this */
   getAlerts() {
     return fetch(`http://api.511.org/transit/servicealerts?api_key=${key}&format=json`)
       .then(response => response.text())
