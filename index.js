@@ -15,7 +15,7 @@ app.use(directions);
 app.use(alerts);
 
 app.get('/', (req, res) => {
-  res.send('aok');
+  res.send('aok from the transit api server');
 });
 
 app.use((req, res) => {
