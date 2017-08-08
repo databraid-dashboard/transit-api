@@ -6,7 +6,6 @@ const Directions = require('../src/models/Directions');
 
 const directions = new Directions();
 
-
 suite('directions route', () => {
   sinon.stub(directions, 'getDirections').callsFake((origin, destination) => {
     if (!origin || !destination) return 400;

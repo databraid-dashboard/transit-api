@@ -1,9 +1,6 @@
 const fetch = require('node-fetch');
-
 const key = process.env.FIVE_ONE_ONE_API_KEY;
-
 require('dotenv').config();
-
 function findLineNumberSingular(str) {
   const lineIndex = str.search('Line ');
   const sliced = str.slice(lineIndex + 5);
@@ -16,7 +13,6 @@ function findLines(desc) {
   if (desc.match(/lines [A-Z0-9]{1,3}.+? and [A-Z0-9]{1,3}/)) return desc.match(/lines [A-Z0-9]{1,3}.+?and [A-Z0-9]{1,3}/)[0].replace('lines ', '').replace('and ', '').split(/,{0,} /);
   return findLineNumberSingular(desc);
 }
-
 
 class Alerts {
   getAlerts() {
