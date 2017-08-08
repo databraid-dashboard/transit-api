@@ -9,4 +9,4 @@
 - service: awsdeployment
   command: aws ecs register-task-definition --cli-input-json file:///deploy/tasks/transit-api.json
 - service: awsdeployment
-  command: aws ecs update-service --cluster databraid-cluster --service test-api-service --task-definition transit-api
+  command: aws ecs update-service --cluster databraid-cluster --service transit-api-service --task-definition transit-api
