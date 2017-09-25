@@ -8,4 +8,4 @@ An API that uses Express to give realtime public transit directions from a start
 
 ## Usage
 
-Before beginning, make a `.env` file containing a Google Maps API key for the `GOOGLE_MAPS_API_KEY` variable and a 511.org API key for the `FIVE_ONE_ONE_API_KEY` variable. Also set what port the API is running on with the `PORT` variable.
+Before beginning, make a `.env` file containing a Google Maps API key for the `GOOGLE_MAPS_API_KEY` variable and a 511.org API key for the `FIVE_ONE_ONE_API_KEY` variable. Also set what port the API is running on with the `PORT` variable. A Google Maps API key can be requested from Google [here](https://developers.google.com/maps/documentation/embed/get-api-key). A 511.org API key can be requested [here](https://511.org/developers/list/tokens/create).
