@@ -9,23 +9,3 @@ An API that uses Express to give realtime public transit directions from a start
 ## Usage
 
 Before beginning, make a .env file containing a Google Maps API key for the GOOGLE_MAPS_API_KEY variable and a 511.org API key for the FIVE_ONE_ONE_API_KEY variable. Also set what port the API is running on with the PORT variable.
-
-Make sure you have Docker installed and running, then do:
-
-```
-npm i
-npm run up
-```
-
-When finished developing do:
-
-```
-npm run down
-```
-
-Testing and linting can all be done respectively with:
-
-```
-npm test
-npm run lint
-```
