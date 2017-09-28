@@ -31,4 +31,6 @@ if (!module.parent) {
   });
 }
 
+/* eslint-disable no-console-log */
+console.log('g52 is the bomb');
 module.exports = app;
