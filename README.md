@@ -8,7 +8,7 @@ An API that uses Express to give realtime public transit directions from a start
 
 ## Usage
 
-Before beginning make sure you have Docker installed and running, then do:
+Before beginning make sure you have [Docker](https://www.docker.com/) installed and running, then do:
 
 ```
 npm i
