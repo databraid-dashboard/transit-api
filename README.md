@@ -2,6 +2,10 @@
 
 # Databraid Transit API
 
+## Description
+
+An API that uses Express to give realtime public transit directions from a starting point to a destination and public transit alerts for the San Francisco Bay Area. This API uses the Google Directions API to retrieve multiple routes and travel information between an origin and a destination for respective routes by public transit. This API uses uses the 511.org API to retrieve alerts information for the bay area and parse the alerts for information on which bus lines are affected.
+
 ## Usage
 
 Before beginning make sure you have [Docker](https://www.docker.com/) installed and running, then do:
